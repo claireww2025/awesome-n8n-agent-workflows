@@ -2,44 +2,47 @@
 
 为 AI Agent 设计的 n8n workflow 精选库，每个条目均标注 OpenClaw/MCP 接入方式与不可逆操作警告。
 
-workflows
-updated
-license
+![workflows](https://img.shields.io/badge/workflows-250-blue)
+![updated](https://img.shields.io/badge/updated-2026-03-green)
+![license](https://img.shields.io/badge/license-MIT-orange)
 
-English
+[English](README.md)
 
-⚠️ 使用前必读
-MCP Server 类 workflow 会赋予 AI Agent 直接执行操作的权限，挂载前请仔细审查
+## ⚠️ 使用前必读
 
-所有 workflow 均需配置 API Key，请勿将含凭证的 n8n 实例直接暴露在公网
+- MCP Server 类 workflow 会赋予 AI Agent 直接执行操作的权限，挂载前请仔细审查
+- 所有 workflow 均需配置 API Key，请勿将含凭证的 n8n 实例直接暴露在公网
+- 社区来源的 workflow 未经独立验证，建议先在测试环境运行
+- 含 ⚠️ 标记的条目含有不可逆操作（发送 / 删除 / 发布），请格外谨慎
+- 涉及 Gmail、WhatsApp、Google Drive 等第三方数据请遵守相关服务条款
 
-社区来源的 workflow 未经独立验证，建议先在测试环境运行
+## 🤖 OpenClaw 快速开始
 
-含 ⚠️ 标记的条目含有不可逆操作（发送 / 删除 / 发布），请格外谨慎
-
-涉及 Gmail、WhatsApp、Google Drive 等第三方数据请遵守相关服务条款
-
-🤖 OpenClaw 快速开始
 安装 n8n skill：
 
-bash
 npx playbooks add skill openclaw/skills --skill n8n
+
+text
+
 配置你的 n8n 实例：
 
-json
 {
-  "skills": {
-    "n8n": {
-      "env": {
-        "N8N_API_KEY": "your-api-key",
-        "N8N_BASE_URL": "your-n8n-url"
-      }
-    }
-  }
+"skills": {
+"n8n": {
+"env": {
+"N8N_API_KEY": "your-api-key",
+"N8N_BASE_URL": "your-n8n-url"
 }
+}
+}
+}
+
+text
+
 配置完成后，直接使用每个条目「🤖 OpenClaw」列中的示例指令即可。
 
-📖 目录
+## 📖 目录
+
 - [🤖 AI Agent](#ai-agent) (39 workflows)
 - [🔌 MCP Server 集成](#mcp-server-集成) (16 workflows)
 - [🧠 记忆与长期上下文](#记忆与长期上下文) (8 workflows)
@@ -377,13 +380,16 @@ It finds…](https://reddit.com/r/n8n/comments/1ov5lb6/friend_lost_his_job_so_in
 | [How I helped a local massage studio reclaim 6 hours a week with a simple AI appo…](https://reddit.com/r/n8n/comments/1ri5ts8/how_i_helped_a_local_massage_studio_reclaim_6/) | ⭐⭐ | — | 自动化按摩工作室的预约提醒流程 | 社区 |
 | [How to create a webhook triggered workflow with Wait on Form Submit and Respond …](https://community.n8n.io/t/how-to-create-a-webhook-triggered-workflow-with-wait-on-form-submit-and-respond-to-webhook/192098) | ⭐⭐ | — | 帮我创建webhook触发的表单提交工作流 | 社区 |
 
-贡献指南
+## 贡献指南
+
 欢迎贡献！请先阅读 CONTRIBUTING.md。
 
-数据来源
+## 数据来源
+
 n8n 官方模板库 · GitHub · Reddit r/n8n · n8n 社区论坛
 
 最后更新：2026-03-02
 
-许可证
+## 许可证
+
 MIT

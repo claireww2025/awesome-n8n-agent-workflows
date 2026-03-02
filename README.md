@@ -20,21 +20,27 @@
 
 Install the n8n skill:
 
-```bash
 npx playbooks add skill openclaw/skills --skill n8n
+
+text
+
 Configure your n8n instance:
 
 {
-  "skills": {
-    "n8n": {
-      "env": {
-        "N8N_API_KEY": "your-api-key",
-        "N8N_BASE_URL": "your-n8n-url"
-      }
-    }
-  }
+"skills": {
+"n8n": {
+"env": {
+"N8N_API_KEY": "your-api-key",
+"N8N_BASE_URL": "your-n8n-url"
 }
-📖 Contents
+}
+}
+}
+
+text
+
+## 📖 Contents
+
 - [🤖 AI Agents](#ai-agents) (39 workflows)
 - [🔌 MCP Server Integration](#mcp-server-integration) (16 workflows)
 - [🧠 Memory & Long-term Context](#memory--long-term-context) (8 workflows)
@@ -372,13 +378,16 @@ It finds…](https://reddit.com/r/n8n/comments/1ov5lb6/friend_lost_his_job_so_in
 | [How I helped a local massage studio reclaim 6 hours a week with a simple AI appo…](https://reddit.com/r/n8n/comments/1ri5ts8/how_i_helped_a_local_massage_studio_reclaim_6/) | ⭐⭐ | — | Ask OpenClaw | community |
 | [How to create a webhook triggered workflow with Wait on Form Submit and Respond …](https://community.n8n.io/t/how-to-create-a-webhook-triggered-workflow-with-wait-on-form-submit-and-respond-to-webhook/192098) | ⭐⭐ | — | Ask OpenClaw | community |
 
-Contributing
+## Contributing
+
 Contributions welcome! Please read CONTRIBUTING.md first.
 
-Data Sources
+## Data Sources
+
 n8n official template library · GitHub · Reddit r/n8n · n8n Community Forum
 
 Last updated: 2026-03-02
 
-License
+## License
+
 MIT

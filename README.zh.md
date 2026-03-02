@@ -2,7 +2,7 @@
 
 为 AI Agent 设计的 n8n workflow 精选库，每个条目均标注 OpenClaw/MCP 接入方式与不可逆操作警告。
 
-![workflows](https://img.shields.io/badge/workflows-250-blue)
+![workflows](https://img.shields.io/badge/workflows-258-blue)
 ![updated](https://img.shields.io/badge/updated-2026-03-green)
 ![license](https://img.shields.io/badge/license-MIT-orange)
 
@@ -54,13 +54,13 @@ text
 
 ## 📖 目录
 
-- [🤖 AI Agent](#ai-agent) (39 workflows)
+- [🤖 AI Agent](#ai-agent) (44 workflows)
 - [🔌 MCP Server 集成](#mcp-server-集成) (16 workflows)
 - [🧠 记忆与长期上下文](#记忆与长期上下文) (8 workflows)
 - [📚 RAG 与知识库问答](#rag-与知识库问答) (8 workflows)
 - [📱 社交媒体自动化](#社交媒体自动化) (50 workflows)
 - [📧 邮件与通讯](#邮件与通讯) (18 workflows)
-- [📊 数据处理与分析](#数据处理与分析) (51 workflows)
+- [📊 数据处理与分析](#数据处理与分析) (54 workflows)
 - [👥 HR 与招聘](#hr-与招聘) (12 workflows)
 - [🛒 电商与销售](#电商与销售) (7 workflows)
 - [💰 金融与交易](#金融与交易) (1 workflows)
@@ -74,6 +74,11 @@ text
 | Workflow | Difficulty | 🛠 Services | 🤖 OpenClaw | Source |
 |----------|-----------|------------|------------|--------|
 | [Google SheetsHTTP RequestTelegram+7Create & Upload AI-Generated ASMR YouTube Sho… ⚠️](https://n8n.io/workflows/5110-create-and-upload-ai-generated-asmr-youtube-shorts-with-seedance-fal-ai-and-gpt-4/) | ⭐⭐⭐⭐ | Telegram, Google Sheets | 生成ASMR短视频并上传YouTube | 官方 |
+| [Draft and Manage Academic Research Papers with GPT-4 and Pinecone](https://n8n.io/workflows/12730-draft-and-manage-academic-research-papers-with-gpt-4-and-pinecone/) | ⭐⭐⭐⭐ | — | 把我的科研问题发送给这个 workflow，先在 Pinecone 里做语义检索，再用 GPT-4 生成带引用的结构化回答和论文草稿章节，并通过邮件把结果发给我。 | official |
+| [Multi-Agent Research Assistant for Structured Articles](https://github.com/christinametalouli/MultiagentResearchAssistant) | ⭐⭐⭐⭐ | — | 围绕指定研究主题，调用多智能体 workflow：先生成章节大纲，再用 Web 检索收集证据，按章节写作并加上引用，最后把完整的研究型文章通过邮件发给我。 | community |
+| [Deep Research Agent: Generate In-Depth PDF Reports from Any Topic](https://www.youtube.com/watch?v=TeFCb5-4e5U) | ⭐⭐⭐⭐ | — | 围绕指定研究主题运行深度研究 Agent：自动拆分子问题，多智能体并行检索与写作，最后生成带引用的 PDF 研究报告并发送给我。 | community |
+| [AI Literature Review Writer with Tavily and ChatGPT](https://www.youtube.com/watch?v=oVf1kPXwyTo) | ⭐⭐⭐⭐ | — | 针对某个研究主题，自动生成 5 章结构化文献综述：先规划章节，再用 Tavily 检索文献，并用 ChatGPT 生成带引用的综述草稿。 | community |
+| [Form-Driven AI Research Agent with Airtable and PDF Output](https://www.youtube.com/watch?v=fcp19B5ur_w) | ⭐⭐⭐⭐ | — | 通过表单提交研究主题，触发多轮 AI 研究：自动规划章节、调用多个研究子 Agent，存储中间结果到 Airtable，并导出最终 PDF 报告。 | community |
 | [Google SheetsHTTP RequestGoogle Drive+1Generate AI Videos with Google Veo3, Save… ⚠️](https://n8n.io/workflows/4846-generate-ai-videos-with-google-veo3-save-to-google-drive-and-upload-to-youtube/) | ⭐⭐⭐ | Google Sheets | 用Google Veo3生成视频并保存到谷歌云盘 | 官方 |
 | [HTTP RequestGoogle DriveTransform Old Photos into Animated Videos with FLUX & Kl…](https://n8n.io/workflows/5755-transform-old-photos-into-animated-videos-with-flux-and-kling-ai-for-social-media/) | ⭐⭐⭐ | — | 用AI把老照片转换成动画视频 | 官方 |
 | [HTTP RequestCodeAI Agent+1Transform Long Videos into Viral Shorts with AI and Sc… ⚠️](https://n8n.io/workflows/9867-transform-long-videos-into-viral-shorts-with-ai-and-schedule-to-social-media-using-whisper-and-gemini/) | ⭐⭐⭐ | — | 将长视频转换成病毒式短视频并发布到社媒 | 官方 |
@@ -248,6 +253,7 @@ text
 
 | Workflow | Difficulty | 🛠 Services | 🤖 OpenClaw | Source |
 |----------|-----------|------------|------------|--------|
+| [Automate Systematic Literature Reviews with Google Drive, GPT-4, Gemini, Qdrant,…](https://n8n.io/workflows/12827-automate-systematic-literature-reviews-with-google-drive-gpt-4-gemini-qdrant-and-airtable/) | ⭐⭐⭐⭐ | — | 帮我定期筛选 Google Drive 文件夹里的新论文，按纳入/排除标准打标签，并把 PRISMA 风格的决策日志同步到 Airtable，方便做系统综述和 meta-analysis。 | official |
 | [n8n agent](https://github.com/kingler/n8n_agent) | ⭐⭐⭐ | — | 帮我用 AI Agent 生成 n8n 自动化工作流 | 社区 |
 | [N8N AI Agents Masterclass](https://github.com/ChinmayKaitade/N8N-AI-Agents-Masterclass) | ⭐⭐⭐ | Openai | 帮我用 AI Agents 构建 {任务名称} 的自动化工作流 | 社区 |
 | [seo auditor service](https://github.com/market-analyticx/seo-auditor-service) | ⭐⭐⭐ | Openai | 帮我对 {网站URL} 进行 SEO 审计分析 | 社区 |
@@ -270,6 +276,8 @@ It finds…](https://reddit.com/r/n8n/comments/1ov5lb6/friend_lost_his_job_so_in
 | [Workflow that gets a CSV of 2K rworkows and create a summary with insights and a…](https://community.n8n.io/t/workflow-that-gets-a-csv-of-2k-rworkows-and-create-a-summary-with-insights-and-actionable-items/266118) | ⭐⭐⭐ | — | 帮我构建CSV数据处理和AI摘要工作流 | 社区 |
 | [Generate a temporary URL for files along with binary data within a workflow](https://community.n8n.io/t/generate-a-temporary-url-for-files-along-with-binary-data-within-a-workflow/72315) | ⭐⭐⭐ | — | 帮我生成临时URL处理workflow中的二进制文件 | 社区 |
 | [Workflow that gets a CSV of 2K rworkows and create a summary with insights and a…](https://community.n8n.io/t/workflow-that-gets-a-csv-of-2k-rworkows-and-create-a-summary-with-insights-and-actionable-items/266118) | ⭐⭐⭐ | — | 批量处理CSV数据生成洞察总结 | 社区 |
+| [Automate Research Paper Collection with Bright Data and n8n](https://n8n.io/workflows/5221-automate-research-paper-collection-with-bright-data-and-n8n/) | ⭐⭐⭐ | Google Sheets | 从指定的学术网站抓取某个研究主题的新论文，用 Bright Data 抽取标题、作者、摘要和链接，并把结果追加到我的 Google Sheets 文献追踪表里。 | official |
+| [Academic Research Agent: Scholar, arXiv, PubMed Monitoring and Summarization](https://www.linkedin.com/pulse/how-can-i-create-ai-agent-academic-research-using-n8n-ziyad-zubair-mbsqf) | ⭐⭐⭐ | — | 持续监控 Google Scholar 提醒、arXiv 和 PubMed 的新论文，为每篇生成结构化摘要（研究问题、方法、主要发现、局限），并带主题标签保存到我的研究知识库。 | community |
 | [Joining different datasets](https://n8n.io/workflows/1747-joining-different-datasets/) | ⭐⭐ | — | 帮我合并不同来源的数据集 | 官方 |
 | [OpenAI GPT-3: Company Enrichment from website content](https://n8n.io/workflows/1862-openai-gpt-3-company-enrichment-from-website-content/) | ⭐⭐ | Openai | 帮我从 {网站} 内容中提取公司信息 | 官方 |
 | [Pulling data from services that n8n doesn’t have a pre-built integration for](https://n8n.io/workflows/1748-pulling-data-from-services-that-n8n-doesnt-have-a-pre-built-integration-for/) | ⭐⭐ | — | 帮我从 {服务名称} 拉取数据到 n8n | 官方 |

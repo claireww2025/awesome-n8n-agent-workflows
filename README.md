@@ -6,6 +6,16 @@
 ![updated](https://img.shields.io/badge/updated-2026-03-green)
 ![license](https://img.shields.io/badge/license-MIT-orange)
 
+### Who is this for?
+
+- Builders using **n8n as the execution layer for AI agents** (OpenClaw, MCP, custom orchestrators).
+- Indie hackers and teams who want **real, working automations**, not just prompts.
+- People exploring how **AI agents + workflows** behave in production.
+
+Recently I started deploying OpenClaw in my own stack and realised how well it pairs with n8n:  
+OpenClaw handles the reasoning and tools, while n8n provides a stable, visual execution layer with retries, logging, and integrations.  
+This list collects the n8n workflows that work especially well in that combo.
+
 [中文版](README.zh.md)
 
 ## ⚠️ Before You Use

@@ -6,6 +6,16 @@
 ![updated](https://img.shields.io/badge/updated-2026-03-green)
 ![license](https://img.shields.io/badge/license-MIT-orange)
 
+### 这个项目是给谁用的？
+
+- 用 n8n 做 **AI Agent 编排 / 执行层** 的开发者（OpenClaw、MCP、自建 Orchestrator）。
+- 想要把 AI 想法变成「真的在跑的自动化工作流」的独立开发者和小团队。
+- 想系统观察 **AI Agent + workflow 在真实场景里怎么用** 的同学。
+
+最近在自己项目里部署 OpenClaw 之后，发现 **OpenClaw + n8n** 这一组合非常顺手：  
+OpenClaw 负责推理和调用工具，n8n 负责稳定执行、可视化编排和第三方集成。  
+这个列表，就是把在这种组合里表现特别好的 n8n workflow 系统性整理出来。
+
 [English](README.md)
 
 ## ⚠️ 使用前必读

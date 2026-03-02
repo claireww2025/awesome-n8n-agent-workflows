@@ -24,7 +24,6 @@ Install the n8n skill:
 npx playbooks add skill openclaw/skills --skill n8n
 Configure your n8n instance:
 
-json
 {
   "skills": {
     "n8n": {
